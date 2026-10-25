@@ -4,7 +4,6 @@ A personal portfolio for AI/ML Engineering and Data Science, with technical case
 
 The public website presents the work. Studio maintains the content without requiring edits to React components.
 
-For the detailed Turkish operating guide, see [Portföy kullanım rehberi](KULLANIM_REHBERI.md).
 
 ## Features
 
