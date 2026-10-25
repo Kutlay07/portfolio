@@ -1,4 +1,4 @@
-
+import site from '../data/site.json'
 function Contact() {
     return (
         <footer id="contact" className="contact-section">
@@ -19,15 +19,14 @@ function Contact() {
             </p>
 
             <div className="contact-links">
-            <a href="kutlay-mahmut07@hotmail.com">
-                Email ↗
-            </a>
+            <span className="contact-email">{site.email}</span>
+            <a href={site.github} target="_blank" rel="noopener noreferrer">GitHub ↗</a>
             </div>
         </div>
 
         <div className="footer-bottom">
-            <span>© 2026 Kutlay</span>
-            <span>Built with React · Deployed on Cloudflare</span>
+            <span>© {new Date().getFullYear()} {site.name}</span>
+            <span>Built with React · Hosted on Cloudflare Pages</span>
         </div>
         </footer>
     )

@@ -1,4 +1,5 @@
-import { projects } from '../data/projects'
+import { projects, progressLabels } from '../data/projects'
+import { Link } from 'react-router'
 
 function Projects() {
     return (
@@ -16,20 +17,26 @@ function Projects() {
                 </div>
 
                 <div className="project-content">
-                <h3>{project.title}</h3>
+                <h3>
+                    <Link to={`/projects/${project.id}`}>
+                        {project.title} ↗
+                    </Link>
+                </h3>
                 <p>{project.description}</p>
                 </div>
 
                 <div className="project-meta">
                 <span className="project-status">
-                    {project.status.replace('-', ' ')}
+                    {progressLabels[project.status]}
                 </span>
 
                 <span>{project.technologies.join(' · ')}</span>
+                {project.github && <a className="project-repository" href={project.github} target="_blank" rel="noopener noreferrer" aria-label={`${project.title} source on GitHub`}>Source code ↗</a>}
                 </div>
             </article>
             ))}
         </div>
+        {projects.length === 0 && <p>New project write-ups are on their way.</p>}
         </section>
     )
 }

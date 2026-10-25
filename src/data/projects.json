@@ -1,0 +1,42 @@
+[
+  {
+    "id": "kutlang",
+    "title": "Kutlang",
+    "category": "AI Engineering",
+    "description": "A modular coding agent harness with tool execution, policy enforcement, and audit logging.",
+    "technologies": ["Python", "FastAPI", "pytest"],
+    "status": "in-progress",
+    "github": "https://github.com/Kutlay07/kutlang",
+    "year": 2026
+  },
+  {
+    "id": "gpt",
+    "title": "GPT from Scratch",
+    "category": "Deep Learning",
+    "description": "A decoder-only Transformer language model implemented and trained with PyTorch.",
+    "technologies": ["PyTorch", "Transformers", "Python"],
+    "status": "completed",
+    "github": "https://github.com/Kutlay07/GPT-From-Scratch",
+    "year": 2026
+  },
+  {
+    "id": "ml-lab",
+    "title": "Applied ML Lab",
+    "category": "Data Science",
+    "description": "A growing data science lab focused on real datasets, exploratory analysis, and reproducible data cleaning.",
+    "technologies": ["Python", "pandas", "Jupyter"],
+    "status": "in-progress",
+    "github": "https://github.com/Kutlay07/data-ml-lab",
+    "year": 2026
+  },
+  {
+    "id": "portfolio-studio",
+    "title": "Portfolio & Studio",
+    "category": "Software Engineering",
+    "description": "This portfolio and its local content studio: Markdown case studies, live previews, image uploads, and a Git-based publishing workflow.",
+    "technologies": ["React", "TypeScript", "Vite", "Cloudflare Pages"],
+    "status": "completed",
+    "github": "https://github.com/Kutlay07/portfolio",
+    "year": 2026
+  }
+]

@@ -252,7 +252,18 @@
   margin-top: 35px;
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
 }
+
+.contact-email { font-size: clamp(16px, 2.5vw, 22px); overflow-wrap: anywhere; user-select: all; }
+.project-repository { color: var(--accent); margin-top: 8px; font-family: var(--font-sans); font-size: 13px; }
+.project-repository:hover { text-decoration: underline; }
+.detail-status { display: inline-block; font: 12px var(--font-mono); padding: 9px 12px; border: 1px solid var(--border); border-radius: 3px; color: var(--ink-secondary); }
+.skip-link { position: fixed; left: 20px; top: -100px; z-index: 20; padding: 12px 18px; background: var(--ink); color: white; }
+.skip-link:focus { top: 20px; }
+.navbar nav { flex-wrap: wrap; justify-content: flex-end; }
+.project-content, .project-detail { min-width: 0; overflow-wrap: anywhere; }
 
 .contact-links a {
   color: var(--accent);
@@ -292,4 +303,78 @@
     flex-direction: column;
     margin-top: 80px;
   }
+}
+
+/* Project Detail Page */
+
+.project-detail {
+  padding: 90px 0 140px;
+  min-height: 65vh;
+}
+
+.project-detail h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(60px, 10vw, 120px);
+  font-weight: 400;
+  line-height: 1;
+  margin: 30px 0;
+}
+
+.back-link {
+  font-size: 14px;
+  color: var(--ink-secondary);
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+.detail-description {
+  max-width: 720px;
+  font-size: 22px;
+  color: var(--ink-secondary);
+}
+
+.detail-technologies {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+.detail-body {
+  border-top: 1px solid var(--border);
+  margin-top: 90px;
+  padding-top: 50px;
+}
+
+.detail-body h2 {
+  font-family: var(--font-serif);
+  font-size: 42px;
+  font-weight: 400;
+}
+
+@media (max-width: 520px) {
+  .project-detail { padding: 50px 0 80px; }
+  .project-detail h1 { font-size: clamp(42px, 12vw, 64px); }
+  .detail-description { font-size: 18px; }
+  .detail-body { margin-top: 50px; padding-top: 20px; }
+  .about-facts { grid-template-columns: 85px minmax(0, 1fr); }
+  .contact-content h2 { font-size: clamp(38px, 10vw, 56px); }
+}
+
+.detail-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.detail-links a {
+  color: var(--accent);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.detail-links a:hover {
+  text-decoration: underline;
 }
