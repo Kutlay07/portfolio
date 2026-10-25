@@ -13,9 +13,9 @@ function Hero() {
         </h1>
 
         <p className="hero-description">
-        I build and experiment with machine learning
-        models, data-driven applications, and AI systems
-        — from first principles to deployment.
+            Exploring machine learning and data science,
+            building intelligent systems from experimentation
+            to production.
         </p>
 
         <a className="hero-link" href="#projects">
